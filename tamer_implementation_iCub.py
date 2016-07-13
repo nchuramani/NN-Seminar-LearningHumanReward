@@ -54,7 +54,7 @@ def detectFace(img):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     cascade = cv2.CascadeClassifier(
-        “/CNN/haarcascade_frontalface_alt.xml")
+        "/CNN/haarcascade_frontalface_alt.xml")
     rects = cascade.detectMultiScale(img, 1.2, 3, 1, (20, 20))
 
     if len(rects) == 0:
@@ -569,7 +569,7 @@ inputVector = []
 
 outputVector=[]
 # change
-modelDirectory = “/CNN/model/repetition_13_BestTest_testCK9_.save"
+modelDirectory = "/CNN/model/repetition_13_BestTest_testCK9_.save"
 # change
 imageDirectory = "/CK"
 
